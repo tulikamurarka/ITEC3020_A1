@@ -46,7 +46,7 @@ nav a:hover {
     order: -1;
 }
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     nav {
         flex-direction: column;
         align-items: flex-start;
@@ -56,6 +56,16 @@ nav a:hover {
         order: 1;
         margin-top: 10px;
         margin-left: 10px;
+    }
+
+    .content .product-info {
+        display: flex;
+        flex-direction: column; /* Change to column for smaller screens */
+    }
+
+    .image-container {
+        margin-right: 0; /* Remove margin to give more space */
+        margin-bottom: 10px; /* Add margin below the image */
     }
 }
 

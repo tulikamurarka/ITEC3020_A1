@@ -1,56 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <link rel="stylesheet" href="style.css">
+    
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Webpage</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            text-align: center;
-        }
-
-        section {
-            padding: 20px;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Baby Blossom</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
 <body>
 
-    <header>
-        <h1>Welcome to My First Webpage</h1>
-    </header>
+<nav>
+    <a href="#" class="logo"><img src="logo.png" alt="Baby Blossom Logo" height="40"></a>
+    <a href="#home">Home</a>
+    <a href="#product">Collection</a>
+    <a href="#about">About Us</a>
+    <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
+    <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+</nav>
 
-    <section>
-        <h2>About Me</h2>
-        <p>This is a simple webpage to showcase my HTML skills.</p>
-    </section>
+<aside class="frequently-bought">
+    <h3>Frequently Bought Together: </h3>
+    <div class="product-thumbnail" id="product1">
+        <img src="related_product1.jpg" alt="Related Product 1">
+        <h2 class="product-name" >Baby Bear Onesies</h2>
+        <p class="product-description" >Keep your little one warm and comfortable with this cozy baby blanket.</p>
+        <div class="price">$19.99</div>
+        <button class="add-to-cart-btn">Add to Cart</button>
+    </div>
+    
+    
+    <div class="product-thumbnail" id="product2">
+        <img src="related_product2.jpg" alt="Related Product 2">
+        <h2 class="product-name" >Ketchup and Mustard Onesies</h2>
+        <p class="product-description" >Perfect for a stylish and coordinated look, this co-ed set includes both ketchup and mustard accessories.</p>
+        <div class="price">$24.99</div>
+        <button class="add-to-cart-btn">Add to Cart</button>
+    </div>
+    
+</aside>
+
+<div class="content clearfix" id="home">
+    <div class="product-info">
+        <div class="image-container">
+            <img src="Image2.jpeg" alt="baby in a onesie">
+        </div>
+        <div class="details-container">
+            <h2>Personalized Baby Onesie</h2>
+            <div class="price">
+                <div class="price">$14.99</div>
+            </div>
+            <div class="rating">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="rating-text">(Rated 4.9/5)</span>
+            </div>
+            <hr>
+            <p>Adorable onesie for your little one with customizable text. Made with soft, breathable fabric to keep your baby comfortable.</p>
+            <p>Fabric Type: 100% cotton.</p>
+            <p>Care instructions: hand wash and machine wash</p>
+            <hr>
+            <ul>
+                <li>Free Delivery</li>
+                <li>Returns Available Within 30 Days</li>
+            </ul>
+            <hr>
+            <p><b>Baby Onesie Sizes:</b>
+                <select id="sizeDropdown">
+                    <option value="0-3" selected>0-3 Months for 21-24 in / 6-12 Ibs.</option>
+                    <option value="3-6">3-6 Months for 24-26 in / 12-16 Ibs.</option>
+                    <option value="6-9">6-9 Months for 26-28 in / 16-20 Ibs.</option>
+                    <option value="12">12 Months for 28-30 in / 20-24 Ibs.</option>
+                    <option value="18">18 Months for 30-32 in / 24-28 Ibs.</option>
+                </select>
+            </p>
+            <hr>
+            <p><b>Colour: </b>
+                <select id="colorDropdown">
+                    <option value="white" selected>White</option>
+                    <option value="blue">Blue</option>
+                    <option value="pink">Pink</option>
+                    <option value="red">Red</option>
+                </select>
+            </p>
+            <hr>
+            <label for="personalized">Kindly include a message containing your personalized text along with the preferred font.</label>
+            <p>Example: Text: Baby Blossom Font: Waltograph
+                <input type="text" id="personalized" name="personalizedText">
+            </p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+    <h2>Customer Reviews</h2>
+    <div class="reviews">
+        <img src="person1.jpg" alt="Avatar1" class="review-avatar">
+        <p><span>John Doe:</span> This product is amazing! My baby loves it, and it's so soft and comfortable.</p>
+    </div>
+    
+    <div class="reviews">
+        <img src="person2.jpg" alt="Avatar2" class="review-avatar">
+        <p><span>Jane Smith:</span> I bought this for a baby shower gift, and the parents-to-be absolutely loved it!</p>
+    </div>
+
+    <div class="pagination-container">
+        <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a href="#" class="active">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+      </div>
+    </div>
+
+    <a href="#" class="previous">&laquo; Previous</a>
+<a href="#" class="next">Next &raquo;</a>
+
+<!-- <a href="#" class="previous round">&#8249;</a>
+<a href="#" class="next round">&#8250;</a> -->
 
     <footer>
-        <p>&copy; 2024 My First Webpage</p>
+        <p>&copy; 2024 Your Website Name. All rights reserved.</p>
+        
     </footer>
 
 </body>
-
 </html>
